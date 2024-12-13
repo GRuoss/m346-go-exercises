@@ -19,15 +19,25 @@ const (
 
 func outputDateRange(zodiacSign rune) {
 	fmt.Printf("%c: ", zodiacSign)
+
+	switch{
+		case zodiacSign == Aries: fmt.Println("21.03. - 19.04") // March 21 - April 19
+		case zodiacSign == Taurus: fmt.Println("20.04. - 20.05") // March 21 - April 19
+		case zodiacSign == Gemini: fmt.Println("21.05. - 21.06") // March 21 - April 19
+		case zodiacSign == Cancer: fmt.Println("22.06. - 22.07") // March 21 - April 19
+		case zodiacSign == Leo: fmt.Println("23.07. - 22.08") // March 21 - April 19
+		case zodiacSign == Virgo: fmt.Println("23.08. - 22.09") // March 21 - April 19
+		case zodiacSign == Libra: fmt.Println("23.09. - 23.10") // March 21 - April 19
+		case zodiacSign == Scorpius: fmt.Println("24.10. - 21.11") // March 21 - April 19
+		case zodiacSign == Sagittarius: fmt.Println("22.11. - 21.12") // March 21 - April 19
+		case zodiacSign == Capricornus: fmt.Println("22.12. - 19.01")// March 21 - April 19
+		case zodiacSign == Aquarius: fmt.Println("20.1. - 18.02") // March 21 - April 19
+		case zodiacSign == Pisces: fmt.Println("19.2. - 20.03") // March 21 - April 19
+		default: fmt.Println("unknown")
+		
+	}
 	// TODO: Replace if, else if branching with switch/case.
 	// TODO: Define all 12 cases...
-	if zodiacSign == Aries {
-		fmt.Println("21.03. - 20.04")
-	} else if zodiacSign == Taurus {
-		fmt.Println("21.04. - 21.05")
-	} else {
-		fmt.Println("")
-	}
 	// TODO: ...and consider a default case.
 }
 
