@@ -34,6 +34,5 @@ func main() {
 		}
 	}
 
-	// TODO: delete this line afterwards
 	
 }
